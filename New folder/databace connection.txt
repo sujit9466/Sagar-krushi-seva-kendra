@@ -1,0 +1,164 @@
+
+
+
+contact table:-
+CREATE TABLE `contact` (
+  `Fname` text,
+  `Lname` text,
+  `phone` text,
+  `email` text,
+  `course` text
+)
+_______________________________________________________
+
+coustomer table:-
+CREATE TABLE `coustomer` (
+  `Cust_id` int DEFAULT NULL,
+  `Cust_Name` text,
+  `Cust_Addr` text,
+  `Cust_mno` text,
+  `Cust_type` text
+)
+__________________________________________________________
+
+coust table:-
+CREATE TABLE `customer` (
+  `Cust_id` int DEFAULT NULL,
+  `Cust_Name` text,
+  `Cust_Addr` text,
+  `Cust_mno` text,
+  `Cust_type` text
+) 
+_____________________________________________________________
+
+enquiry tqble:-
+CREATE TABLE `enqury` (
+  `Fname` text,
+  `Lname` text,
+  `phone` text,
+  `email` text,
+  `subject` text,
+  `mesege` text
+) 
+
+
+_______________________________________________________
+
+Product Table:-
+CREATE TABLE `product` (
+  `Prod_id` int DEFAULT NULL,
+  `Prod_name` text,
+  `Prod_umo` text,
+  `Prod_lot` float DEFAULT NULL,
+  `Prod_mfg` date DEFAULT NULL,
+  `Prod_exp` date DEFAULT NULL,
+  `Prod_type_pr` text,
+  `Prod_company` text
+)
+
+
+__________________________________________________________
+
+
+Purchace Table:-
+
+
+
+CREATE TABLE `purches` (
+  `Pur_Id` int DEFAULT NULL,
+  `P_Date` date DEFAULT NULL,
+  `Comp_name` text,
+  `Comp_addr` text,
+  `C_mno` text,
+  `Sr_no` int DEFAULT NULL,
+  `P_name` text,
+  `Quntity` float DEFAULT NULL,
+  `Rate` float DEFAULT NULL,
+  `Mfg` date DEFAULT NULL,
+  `Exp` date DEFAULT NULL,
+  `Total_all` float DEFAULT NULL,
+  `Total` float DEFAULT NULL,
+  `Discount` float DEFAULT NULL,
+  `Netpay` float DEFAULT NULL
+) 
+
+
+
+
+____________________________________________________________
+
+Purchace order table:-
+CREATE TABLE `purchesorder` (
+  `Ord_id` int DEFAULT NULL,
+  `Sup_name` text,
+  `Sup_comp` text,
+  `Ord_date` date DEFAULT NULL,
+  `Due_date` date DEFAULT NULL,
+  `Sr_no` int DEFAULT NULL,
+  `Prod_name` text,
+  `Prod_Qua` float DEFAULT NULL,
+  `Rate` float DEFAULT NULL,
+  `Lot_no` float DEFAULT NULL
+)
+
+
+______________________________________________________________
+
+
+scalce table:-
+
+CREATE TABLE `sales` (
+  `Cust_id` int DEFAULT NULL,
+  `C_Date` date DEFAULT NULL,
+  `Cust_name` text,
+  `c_mob` text,
+  `Cust_Addr` text,
+  `Sr_no` int DEFAULT NULL,
+  `P_name` text,
+  `Quntity` float DEFAULT NULL,
+  `Rate` float DEFAULT NULL,
+  `Mfg` date DEFAULT NULL,
+  `Exp` date DEFAULT NULL,
+  `Total_all` float DEFAULT NULL,
+  `Total` float DEFAULT NULL,
+  `Discount` float DEFAULT NULL,
+  `Netpay` float DEFAULT NULL
+) 
+
+____________________________________________________________________
+
+
+sacles Tblae:-
+
+CREATE TABLE `salesbill` (
+  `Cust_id` int DEFAULT NULL,
+  `C_Date` date DEFAULT NULL,
+  `Cust_name` text,
+  `c_mob` text,
+  `Cust_Addr` text,
+  `Sr_no` int DEFAULT NULL,
+  `P_name` text,
+  `Quntity` float DEFAULT NULL,
+  `Rate` float DEFAULT NULL,
+  `Mfg` date DEFAULT NULL,
+  `Exp` date DEFAULT NULL,
+  `Total_all` float DEFAULT NULL,
+  `Total` float DEFAULT NULL,
+  `Discount` float DEFAULT NULL,
+  `Netpay` float DEFAULT NULL
+)
+
+_________________________________________________________________________
+
+supplier Table:-
+
+CREATE TABLE `supplier` (
+  `Supp_id` int DEFAULT NULL,
+  `Supp_name` text,
+  `Supp_Addr` text,
+  `Supp_mno` text,
+  `Supp_eid` varchar(50) DEFAULT NULL,
+  `Supp_comp` text,
+  `Supp_type_pro` text
+)
+_____________________________________________________________________-
